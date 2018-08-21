@@ -1,0 +1,147 @@
+            
+            render() {
+    const { dailyEntry } = this.props;
+
+    if (dailyEntry) {
+      return (
+        <div>
+          {dailyEntry.map(day => (
+            <div key={day.id} className="col s12 m4 fade-in-fwd">
+              <div className=" card horizontal day-card">
+                <div className="card-image" />
+                <div className="card-stacked">
+                  <span className="day-card-bt" />
+
+                  <h4 className="card-title day-card-header">
+                    {day.currentDay}
+                  </h4>
+                  <div className="card-content ">
+                    <span className=" card-mr day-card-cat">Worked </span>
+                    <span className="day-card-arrow">
+                      <i className="material-icons tiny">navigate_next</i>
+                    </span>
+                    <span className="title day-card-cat-total">
+                      {day.hoursWorked} Hours
+                    </span>
+                    <hr />
+
+                    <span className=" card-mr day-card-cat">MADE </span>
+                    <span className="day-card-arrow">
+                      <i className="material-icons tiny">navigate_next</i>
+                    </span>
+                    <span className="title day-card-cat-total">
+                      ${parseFloat(day.moneyMade).toFixed(2)}
+                    </span>
+                    <hr />
+
+                    <span className=" card-mr day-card-cat">NOTES </span>
+                    <span className="day-card-arrow">
+                      <i className="material-icons tiny">keyboard_arrow_down</i>
+                    </span>
+                    <div className="title day-card-cat-notes">
+                      {day.dailyNotes}
+                    </div>
+                  </div>
+
+                  <div className="card-action">
+                    <button
+                      className="btn day-card-btn-delete"
+                      type="submit"
+                      name="action"
+                    >
+                      Delete
+                    </button>
+
+                    <Link
+                      to={`/day/${day.id}`}
+                      className="btn day-card-btn-edit"
+                    >
+                      Edit
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      );
+    } else {
+      <Spinner />;
+    }
+  }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+---------------1st store----------------------
+
+
+            <div>
+              <div key={day.id} className="col s12 m4 fade-in-fwd">
+                <div className=" card horizontal day-card">
+                  <div className="card-image" />
+                  <div className="card-stacked">
+                    {/* Top border */}
+                    <span className="day-card-bt" />
+                    {/* Current day */}
+                    <h4 className="card-title day-card-header">
+                      {day.currentDay}
+                    </h4>
+                    <div className="card-content ">
+                      {/* Hours Worked */}
+                      <span className=" card-mr day-card-cat">Worked </span>
+                      <span className="day-card-arrow">
+                        <i className="material-icons tiny">navigate_next</i>
+                      </span>
+                      <span className="title day-card-cat-total">
+                        {day.hoursWorked} Hours
+                      </span>
+                      <hr />
+                      {/* Money made */}
+                      <span className=" card-mr day-card-cat">MADE </span>
+                      <span className="day-card-arrow">
+                        <i className="material-icons tiny">navigate_next</i>
+                      </span>
+                      <span className="title day-card-cat-total">
+                        ${parseFloat(day.moneyMade).toFixed(2)}
+                      </span>
+                      <hr />
+                      {/* Daily Notes */}
+                      <span className=" card-mr day-card-cat">NOTES </span>
+                      <span className="day-card-arrow">
+                        <i className="material-icons tiny">
+                          keyboard_arrow_down
+                        </i>
+                      </span>
+                      <div className="title day-card-cat-notes">
+                        {day.dailyNotes}
+                      </div>
+                    </div>
+                    {/* Delete Button */}
+
+                    <div className="card-action">
+                      <button
+                        className="btn day-card-btn-delete"
+                        type="submit"
+                        name="action"
+                      >
+                        Delete
+                      </button>
+                      {/* Edit Button */}
+                      <Link
+                        to={`/client/${day.id}`}
+                        className="btn day-card-btn-edit"
+                      >
+                        Edit
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
