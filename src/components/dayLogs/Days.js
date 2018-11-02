@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
-// import Spinner from '../layout/Spinner';
 
 class Days extends Component {
   // Delete day
@@ -64,7 +63,6 @@ class Days extends Component {
                   <div className="card-action">
                     <button
                       onClick={this.onDeleteClick.bind(this, day.id)}
-                      // id={day.id}
                       className="btn day-card-btn-delete"
                     >
                       Delete

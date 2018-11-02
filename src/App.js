@@ -8,7 +8,6 @@ import store from './store';
 import AppNavbar from './components/layout/AppNavbar';
 import Home from './components/layout/Home';
 import Dashboard from './components/layout/Dashboard';
-// import AppFooter from './components/layout/AppFooter';
 import AddDay from './components/dayLogs/AddDay';
 import EditDay from './components/dayLogs/EditDay';
 import Login from './components/auth/Login';
@@ -53,7 +52,6 @@ class App extends Component {
                 />
               </Switch>
             </div>
-            {/* <AppFooter /> */}
           </div>
         </Router>
       </Provider>

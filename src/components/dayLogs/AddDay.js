@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { compose } from 'redux';
-// import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 
 class AddDay extends Component {
@@ -106,11 +105,6 @@ class AddDay extends Component {
                 </div>
               </div>
               <div className="card-action center-align ">
-                {/* <input
-                  type="reset"
-                  id="reset"
-                  class="btn-flat grey-text waves-effect"
-                /> */}
                 <input
                   type="submit"
                   className="btn cyan lighten-2 waves-effect waves-light add-day-btn"
@@ -120,17 +114,6 @@ class AddDay extends Component {
             </form>
           </div>
         </div>
-
-        {/* <div className="row center-align">
-          <div className="col s12 m6 mt-5">
-            <Link to="/dashboard" className="">
-              <div className="valign-wrapper center-align">
-                <i className="material-icons small">keyboard_arrow_left</i>
-                BACK TO DASHBOARD
-              </div>
-            </Link>
-          </div>
-        </div> */}
       </div>
     );
   }

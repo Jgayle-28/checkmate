@@ -61,12 +61,6 @@ class AppNavbar extends Component {
                   <i className="material-icons">menu</i>
                 </a>
                 <ul className="right hide-on-med-and-down">
-                  <li className="nav-link">
-                    <Link to="/register">REGISTER</Link>
-                  </li>
-                  <li className="nav-link">
-                    <Link to="/login">LOGIN</Link>
-                  </li>
                   {isAuthenticated ? (
                     <span>
                       <li className="nav-link">
@@ -78,7 +72,16 @@ class AppNavbar extends Component {
                         </a>
                       </li>
                     </span>
-                  ) : null}
+                  ) : (
+                    <span>
+                      <li className="nav-link">
+                        <Link to="/register">REGISTER</Link>
+                      </li>
+                      <li className="nav-link">
+                        <Link to="/login">LOGIN</Link>
+                      </li>
+                    </span>
+                  )}
                 </ul>
               </div>
             </div>
@@ -86,7 +89,6 @@ class AppNavbar extends Component {
         </div>
         {/* Side Nav */}
         <ul id="mobile-nav" className="sidenav">
-          {/* <h4 className="blue-grey-text center">CHECK MATE</h4> */}
           <li className="center">
             <Link to="/" className="brand-logo center">
               <img src={clogo} alt="Check Mate Logo" className="center" />
@@ -109,11 +111,6 @@ class AppNavbar extends Component {
               <i className="material-icons">note_add</i> Add Day
             </Link>
           </li>
-          {/* <li>
-            <a href="index.html">
-              <i className="material-icons">note_add</i> Add Day
-            </a>
-          </li> */}
 
           <div className="divider" />
 

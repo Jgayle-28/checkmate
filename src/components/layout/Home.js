@@ -17,11 +17,6 @@ export default () => {
                 <a href="#about" className="btn btn-large white black-text">
                   Learn More
                 </a>
-                {/* <a href="#contact" class="white-text">
-                  <i class="material-icons medium scroll-icon">
-                    arrow_drop_down_circle
-                  </i>
-                </a> */}
               </div>
             </div>
           </div>

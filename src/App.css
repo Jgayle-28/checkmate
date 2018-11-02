@@ -23,7 +23,6 @@ html {
 /* NAVIGATION */
 .brand-logo {
   margin-top: 3px;
-  /* margin-left: 5px; */
 }
 
 .nav-container {
@@ -100,9 +99,6 @@ html {
 
 /* STATS */
 .card-bg {
-  /* background: radial-gradient(to top left, #b2fefa, #0ed2f7); */
-  /* background: radial-gradient(to top left, #085078, #85d8ce); */
-  /* background: linear-gradient(135deg, #17c9e6 0%, #0ea8cd 90%); */
   background: linear-gradient(145deg, #17c9e6 0%, #42d2da 100%);
 }
 
@@ -118,15 +114,6 @@ html {
 
 /* DAY CARDS */
 .day-card {
-  /* background-color: #1c2941; */
-  /* background-color: #354159; */
-  /* background-color: #2a3447; */
-  /* background-color: #283244; */
-  /* background-color: #212c3f; */
-  /* background-color: #8696a9; */
-  /* background-color: #02a1c9; */
-  /* background-color: #15bce2; */
-  /* background-color: #00c9e2; */
   background-color: #fff;
 }
 
@@ -145,12 +132,10 @@ html {
 .day-card-cat {
   color: #607d8b;
   text-transform: uppercase;
-  /* margin-right: 10px; */
 }
 
 .day-card-cat-total {
   color: #15bce2;
-  /* margin-right: 10px; */
 }
 
 .day-card-arrow {
@@ -197,7 +182,6 @@ html {
 /* ADD DAY */
 
 .footer-styles {
-  /* position: absolute; */
   bottom: 0;
   left: 0;
   width: 100%;

@@ -1,6 +1,5 @@
 import React from 'react';
 import spinner from '../../images/spinner.gif';
-// import spinner from '../../images/spinner.png';
 
 export default () => {
   return (

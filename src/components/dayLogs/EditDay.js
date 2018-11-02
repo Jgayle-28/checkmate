@@ -143,11 +143,6 @@ class EditDay extends Component {
                   </div>
                 </div>
                 <div className="card-action center-align ">
-                  {/* <input
-                  type="reset"
-                  id="reset"
-                  class="btn-flat grey-text waves-effect"
-                /> */}
                   <input
                     type="submit"
                     className="btn cyan lighten-2 waves-effect waves-light add-day-btn"
